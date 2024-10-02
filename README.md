@@ -5,6 +5,6 @@ streamlit run app.py
 ```
 ***
 
-[~] Preprocessing  
-[ ] Analyze  
-[ ] ML  
+- [~] Preprocessing
+- [ ] Analyze
+- [ ] ML
