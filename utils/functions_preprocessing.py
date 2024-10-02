@@ -11,9 +11,7 @@ from pathlib import Path
 import uuid
 from nltk.stem import PorterStemmer, SnowballStemmer
 
-
 from utils.currencies import currencies
-
 
 # Charger les stopwords à partir des fichiers JSON
 def load_stopwords(language):
@@ -206,7 +204,7 @@ def case_conversion(df):
 
 def remove_punctuation(df):
     st.markdown("\n")
-    st.header("Suppression de la ponctuation", help="Supprime les caractères de ponctuation, tels que !\"#$%&'()*+, -./:;<=>?@[\]^_`{|}~.")
+    st.header("Suppression de la ponctuation", help="Supprime les caractères de ponctuation, tels que !\"#$%&'()*+, -./:;<=>?@[\\]^_`{|}~.")
     cols_for_punctuation_removal = st.multiselect(
         "Sélectionnez les colonnes textuelles pour supprimer la ponctuation :",
         [col for col in df.columns if pd.api.types.is_string_dtype(df[col])]
