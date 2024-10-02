@@ -5,6 +5,9 @@ streamlit run app.py
 ```
 ***
 
-- [X] Preprocessing
-- [ ] Analyze
-- [ ] ML
+## In progress
+- Preprocessing
+- Analyze
+
+## TODO
+- ML
